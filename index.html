@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/sudoku.css">
+    <title>E-viju's creation - Sudoku</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="">E-VIJU's Sudoku</div>
+            <small id="small">Inpired by ANKUSH Sir</small>
+        </div>
+        <div class="nav-list">
+            <li><a href="">
+                Sudoku Tips</a></li>
+            <li><a href="">Check Solution</a></li>
+            <li><a href="">Your Score Recod</a></li>
+            <li><a href="">Ask to computer</a></li>
+        </div>
+    </div>
+    <div class="finalResultContainer">
+        <h1 class="finalResult">Result will shown here when Computer will solve Sudoku</h1>
+    </div>
+    <div class="sudokuAndKeypad">
+        <div class="sudoku"></div>
+        <div class="keypadpart">
+            <div>
+                <h1 class="heading">Let's Play Sudoku</h1>
+                <div class="keypad">
+                    <button>1</button>   <button>2</button>  <button>3</button>
+                    <button>4</button>   <button>5</button>  <button>6</button>
+                    <button>7</button>   <button>8</button>  <button>9</button>
+                    <button><</button>   <button>0</button>  <button>></button>
+                    <button id="refresh" onclick="fillRandomValue()">Refresh</button>
+                </div>
+                <div>
+                    <button id="playWithComputer" onclick="playWithComputer()">Play With Computer</button>
+                </div>
+            </div>
+            <div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="coptyright">
+            @coptyright 2022
+        </div>
+        <div>
+            <p>Here for your mental practice we provide 5 sudoku with inbuilt values. <br> So you can practice, you can solve them by taking as a challange.</p>
+        </div>
+        <div class="links">
+            <a href="">Privacy and Policies</a>
+            <a href="">Support</a>
+            <a href="">Contact us</a>
+            <a href="">Our other games</a>
+            <a href="">Read More about us</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/sudoku.js"></script>

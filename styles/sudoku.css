@@ -1,0 +1,155 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: orchid;
+}
+.logo{
+    width: 50%;
+    font-size: 35px;
+    font-weight: bold;
+}
+.nav-list{
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-select{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+table td{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+.brown{
+    background-color: brown;
+}
+.orchid{
+    background-color: orchid;
+}
+table td{
+    border: 1px solid black;
+}
+.box-3x3{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin: 2px 2px;
+}
+.sudokuAndKeypad{
+    width: 57%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(3,92px);
+    grid-template-rows: repeat(5,70px);
+    grid-gap: 5px;
+
+}
+.keypad button{
+    border-radius: 8px;
+    font-size: 25px;
+    border: 1px solid rgb(107, 95, 95);
+}
+.keypad button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+#refresh{
+    width: 285px;
+    height: 60px;
+}
+.heading{
+    padding-top: 0px;
+    margin-top: 2px;
+    letter-spacing: 1.0px;
+    margin-left: 10px;
+    margin: 0px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg,orange,orchid);
+}
+#playWithComputer{
+    width: 285px;
+    height: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: rgb(235, 227, 227);
+    border: 3px solid black;
+}
+#playWithComputer:hover{
+    background-color: rgb(182, 186, 197);
+}
+.finalResultContainer{
+    width: 57%;
+    background-image: linear-gradient(to right,orchid,orange);
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.finalResult{
+    text-align: center;
+    padding:0px;
+    margin: 0px;
+}
+.logo div{
+    margin-bottom: 0px;
+}
+#small{
+    margin-top: -20px;
+    font-size: 15px;
+    margin-left: 30px;
+    font-style: italic;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(207, 202, 202);
+    padding: 20px;
+}
+.footer p{
+    letter-spacing: 1px;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    margin: auto;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+}
