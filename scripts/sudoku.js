@@ -1,4 +1,4 @@
-
+let inputGlobal = null
 let sudoku = document.querySelector('.sudoku')
 let arr = []
 let divs = []
@@ -49,6 +49,9 @@ function createInputBox()
     {
         let x = document.createElement('input')
         x.className += " box-3x3"
+        x.onclick = function setAddress(){
+            inputGlobal = x
+        }
         inputs.push(x)
         div.append(x)
     }
@@ -231,4 +234,7 @@ function fillRandomValue()
             arr[i][j].value = ' '
     }
     
+}
+function keyPress(key){
+    inputGlobal.value = key
 }
