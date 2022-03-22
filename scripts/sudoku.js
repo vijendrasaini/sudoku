@@ -1,4 +1,5 @@
 let inputGlobal = null
+let saveColor = ""
 let sudoku = document.querySelector('.sudoku')
 let arr = []
 let divs = []
@@ -51,6 +52,8 @@ function createInputBox()
         x.className += " box-3x3"
         x.onclick = function setAddress(){
             inputGlobal = x
+            // saveColor = inputGlobal.background
+            // x.style.background = "red"
         }
         inputs.push(x)
         div.append(x)
@@ -235,6 +238,11 @@ function fillRandomValue()
     }
     
 }
-function keyPress(key){
-    inputGlobal.value = key
+function keyPress(e){
+    inputGlobal.value = e.target.textContent
 }
+
+const keys = document.getElementsByClassName('keys')
+keys[0].onclick = keyPress
+for(let i=0;i<keys.length;i++)
+    keys[i].onclick = keyPress
